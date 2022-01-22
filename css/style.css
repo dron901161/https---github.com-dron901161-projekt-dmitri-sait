@@ -454,14 +454,41 @@ img {
 
 .header::before {
   content: '';
-  width: 50%;
+  width: 40%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
+  background-color: #ffffff;
 }
 
-.header-title {
+.header-block {
+  width: 50%;
+  position: relative;
+  margin-right: 50px;
+}
+
+.header-block__list {
+  margin: 0;
+  padding: 0;
+  padding-left: 28px;
+}
+
+.header-block__text {
+  width: 420px;
+  font-size: 18px;
+  line-height: 130%;
+  margin-bottom: 30px;
+}
+
+.header-block__item {
+  margin-bottom: 15px;
+  width: 365px;
+  font-size: 18px;
+  line-height: 130%;
+}
+
+.header-block__title {
   font-weight: 600;
   font-size: 52px;
   line-height: 130%;
@@ -469,32 +496,8 @@ img {
   margin-bottom: 30px;
 }
 
-.offer__button {
+.header__button {
   margin-top: 15px;
-}
-
-.offer-block {
-  width: 50%;
-}
-
-.offer-block__text {
-  width: 420px;
-  font-size: 18px;
-  line-height: 130%;
-  margin-bottom: 30px;
-}
-
-.offer-block__list {
-  margin: 0;
-  padding: 0;
-  padding-left: 28px;
-}
-
-.offer-block__item {
-  margin-bottom: 15px;
-  width: 365px;
-  font-size: 18px;
-  line-height: 130%;
 }
 
 .biography {
