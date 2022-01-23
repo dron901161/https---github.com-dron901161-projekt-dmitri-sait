@@ -1,0 +1,54 @@
+.algorithm
+    padding: 100px 0
+    &-block
+        display: flex
+        position: relative 
+        justify-content: center
+        &__title
+            width: 382px
+            display: inline-block
+            margin: 0
+            margin-bottom: 40px
+        &__cell-color
+            &::before
+                background-color: $btn-color
+        &__element
+            position: absolute
+            top: 22px
+            left: 9px
+            width: 1px
+            height: 44px
+            border: 1px dashed $dashed-color
+                
+
+ol  
+    list-style: none
+    width: 440px
+    font-size: 17px 
+    font-weight: 400                  
+    padding: 0                  
+    margin: 10px 0 
+    li
+        counter-increment: num
+        margin: 0         
+        padding: 0 0 44px 40px                 
+        position: relative 
+        line-height: 20px
+        &::marker
+            display: none
+        &::before
+            content: counter(num)
+            display: inline-block
+            position: absolute
+            top: 0
+            left: 0
+            width: 19px
+            height: 19px
+            background: #fff
+            color: $dark
+            text-align: center
+            font-size: 12px
+            border: 1px solid $btn-color
+            border-radius: 50%
+            
+
