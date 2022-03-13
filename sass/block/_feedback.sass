@@ -1,0 +1,98 @@
+.feedback
+  margin: 100px 0
+  background: url(../img/feedback/feedback-fon.jpg)
+  background-repeat: no-repeat
+  background-size: contain
+  background-position: center left
+  position: relative
+  &::before
+    content: ''
+    width: 50%
+    height: 100%
+    position: absolute
+    top: 0
+    right: 0
+    background-color: #ffffff
+  &-block
+    display: flex
+    flex-direction: column
+    width: 100%
+    position: relative
+    align-items: flex-end
+    &__title
+      display: block
+      font-style: normal
+      font-weight: 500
+      font-size: 42px
+      line-height: 130%
+      margin-bottom: 40px
+      margin-right: 22%
+  &-form
+    display: flex
+    flex-direction: column
+  &__input
+    padding: 15px
+    border: 2px solid $dark
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 130%
+    width: 280px
+    height: 53px
+    margin-right: 25px
+    margin-bottom: 20px
+    &::focus
+      outline-color: $btn-color
+  &__message
+    padding: 15px
+    border: 2px solid $dark
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 130%
+    width: 588px
+    height: 180px
+    margin-bottom: 20px
+  &__button
+    font-style: normal
+    font-weight: 500
+    font-size: 18px
+    line-height: 130%
+    background: $btn-color
+    width: 159px
+    height: 53px
+  &__wrapper
+    width: 100%
+    position: relative
+    margin: 15px 0
+    text-align: center
+  &__file
+    opacity: 0
+    visibility: hidden
+    position: absolute 
+    &-button
+      width: 588px
+      height: 130px
+      border: 2px solid $dark
+      background: #ffffff
+      color: $dark
+      font-weight: 400
+      font-size: 18px
+      line-height: 130%
+      display: flex
+      cursor: pointer
+      &-text
+        line-height: 1
+        margin: auto
+        display: flex
+        align-items: center
+        width: 30%
+        justify-content: space-between
+  &__text
+    display: inline-block
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 130%  
+    margin-bottom: 23px
+    margin-left: 8px

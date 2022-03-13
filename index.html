@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="viewport" content="width=1920"/>
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -209,7 +209,34 @@
 		<!-- /.container -->
 	</section>
 	<!-- /.scheme -->
-
+    <section class="feedback">
+		<div class="container">
+			<div class="feedback-block">
+				<div class="feedback-block__title">Обратная связь</div>
+				<form action="#" class="feedback-form">
+					<div class="feedback-input">
+						<input type="text" placeholder="Ваше имя" class="feedback__input">
+						<input type="text" placeholder="Электронная почта" class="feedback__input">
+					</div>
+					<textarea name="message" placeholder="Ваше сообщение" class="feedback__message"></textarea>
+					<div class="feedback__wrapper">
+						<input type="file" name="file" type="file" name="file" id="input__file" multiple class="feedback__file">
+						<label for="input__file" class="feedback__file-button">
+							<span class="feedback__file-button-text">
+								<img src="img/feedback/file.svg" alt="файл">
+								Загрусить файл 
+							</span>
+						</label>
+					</div>
+					<div class="feedback__agreemet">
+						<input type="checkbox" class="feedback__checkbox">
+						<span class="feedback__text">Даю согласие на обработку персональных данных</span>
+					</div>
+					<button class="feedback__button">Отправить</button>
+				</form>
+			</div>
+		</div>
+	</section>
 
 	<footer class="footer">
 		<div class="container">
