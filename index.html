@@ -213,10 +213,10 @@
 		<div class="container">
 			<div class="feedback-block">
 				<div class="feedback-block__title">Обратная связь</div>
-				<form action="#" class="feedback-form">
+				<form action="send.php" method="post" class="feedback-form">
 					<div class="feedback-input">
-						<input type="text" placeholder="Ваше имя" class="feedback__input">
-						<input type="text" placeholder="Электронная почта" class="feedback__input">
+						<input type="text" placeholder="Ваше имя" class="feedback__input" name="name">
+						<input type="text" placeholder="Электронная почта" class="feedback__input" name="email">
 					</div>
 					<textarea name="message" placeholder="Ваше сообщение" class="feedback__message"></textarea>
 					<div class="feedback__wrapper">
